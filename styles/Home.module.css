@@ -27,8 +27,8 @@
 .social {
   display: flex;
   justify-content: space-between;
-  width: 150px;
-  font-size: 3em;
+  width: 200px;
+  font-size: 2.5em;
 }
 
 .projects_wrapper {
@@ -40,6 +40,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: rgba(107, 51, 230, 0.2);
+}
+
+.footer_msg {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.heart {
+  color: #6b33e6;
 }
 
 @media screen and (max-width: 650px) {

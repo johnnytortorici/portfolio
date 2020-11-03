@@ -1,5 +1,5 @@
 .project_container {
-  width: calc(50% - 10px);
+  width: calc(33% - 10px);
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #d3d3d3;
@@ -14,6 +14,8 @@
 
 .project_description {
   padding: 20px;
+  font-size: 0.9em;
+  line-height: 1.5;
 }
 
 .role {

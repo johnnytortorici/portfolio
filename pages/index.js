@@ -1,9 +1,31 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Project from "../components/Project";
-import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaEnvelopeSquare } from "react-icons/fa";
+import * as typeformEmbed from "@typeform/embed";
+import { useEffect } from "react";
 
 export default function Home() {
+  // useEffect(() => {
+  //   const typeform = typeformEmbed.makePopup(
+  //     "https://johnny852428.typeform.com/to/slqYtJK6",
+  //     {
+  //       mode: "popup",
+  //       opacity: 55,
+  //       buttonText: "Answer this!",
+  //       hideScrollbars: true,
+  //       onSubmit: function () {
+  //         console.log("Typeform successfully submitted");
+  //       },
+  //       onReady: function () {
+  //         console.log("Typeform is ready");
+  //       },
+  //     }
+  //   );
+
+  //   typeform.open();
+  // }, []);
+
   return (
     <>
       <Head>
@@ -34,21 +56,27 @@ export default function Home() {
           <h1>Johnny Tortorici</h1>
           <h2>Web developer, number cruncher, creator.</h2>
         </div>
-        <p className={styles.skills}>React | Node.js | Express | MongoDB</p>
+        {/* <p className={styles.skills}>React | Node.js | Express | MongoDB</p> */}
         <div className={styles.social}>
           <a
             href="https://www.linkedin.com/in/johnnygt/"
             target="_blank"
-            rel="noopener noreferrer"
+            // rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://github.com/johnnytortorici"
             target="_blank"
-            rel="noopener noreferrer"
+            // rel="noopener noreferrer"
           >
             <FaGithubSquare />
+          </a>
+          <a
+            href="mailto:johnny.tortorici@gmail.com"
+            // rel="noopener noreferrer"
+          >
+            <FaEnvelopeSquare />
           </a>
         </div>
       </div>
@@ -72,15 +100,39 @@ export default function Home() {
             href="https://github.com/johnnytortorici/wealthvitals"
           />
           <Project
+            name="Shopify Store Locator"
+            role="Freelance, Shopify client"
+            description="Built a custom store locator for a Shopify client. Uses the Google Maps API for autocomplete search, map markers and distance calculations."
+            src="/images/shopify_store_locator.jpg"
+            alt="Shopify Store Locator"
+            href="https://obasan.ca/pages/retailers"
+          />
+          <Project
+            name="Shopify Appointment Booking"
+            role="Freelance, Shopify client"
+            description="This 3-in-1 Shopify contact form allows users to request online or in-person appointments as well as store catalogues."
+            src="/images/shopify_custom_form.jpg"
+            alt="Shopify Appointment Booking"
+            href="https://obasan.ca/pages/enquiries"
+          />
+          {/* <Project
             name="The Shoppies"
             role="Front-end, React project"
             description="Movie nomination demo built with React. Links to the OMDb API."
             src="/images/shoppies-responsive.jpg"
             alt="The Shoppies"
             href="https://shoppies-react.netlify.app/"
-          />
+          /> */}
         </div>
       </div>
+      {/* <div className="typeform">
+        <button onClick={() => typeform.open()}>Get in touch</button>
+      </div> */}
+      <footer className={styles.footer}>
+        <p className={styles.footer_msg}>
+          Built with <span className={styles.heart}>&#9829;</span> in Montreal.
+        </p>
+      </footer>
     </>
   );
 }
