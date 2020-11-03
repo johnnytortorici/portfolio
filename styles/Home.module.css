@@ -1,0 +1,53 @@
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(33, 210, 254, 1) 0%,
+    rgba(107, 51, 230, 1) 100%
+  );
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 40px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.skills {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  font-size: 3em;
+}
+
+.projects_wrapper {
+  background-color: rgba(107, 51, 230, 0.2);
+  padding: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .heading {
+    padding: 0 20px;
+  }
+
+  .projects_wrapper {
+    padding: 20px;
+  }
+}

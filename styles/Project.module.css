@@ -1,0 +1,40 @@
+.project_container {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #d3d3d3;
+}
+
+.project_container:hover {
+  box-shadow: 0 0 10px #d3d3d3;
+}
+
+.project_description {
+  padding: 20px;
+}
+
+.role {
+  padding: 5px 0 15px;
+  font-size: 0.8em;
+}
+
+.project_link {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .project_container {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project_container {
+    width: 100%;
+  }
+}
